@@ -8,6 +8,10 @@ public class UserService {
         this.notificationService = notificationService;
     }
 
+    public UserService() {
+
+    }
+
     public void notifyUser(String message){
         notificationService.send("hello");
     }

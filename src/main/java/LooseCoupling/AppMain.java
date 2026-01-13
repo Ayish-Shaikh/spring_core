@@ -12,5 +12,8 @@ public class AppMain {
         userService1.notifyUser("Order Placed!");
         userService2.notifyUser("Order Placed!");
 
+        UserService userServiceSetter = new UserService();
+        userServiceSetter.setNotificationService(emailService);
+        userServiceSetter.notificationService = smsService;
     }
 }
