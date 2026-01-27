@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.GreetingService;
 
 public class GreetingService {
     public static void sayHello(){

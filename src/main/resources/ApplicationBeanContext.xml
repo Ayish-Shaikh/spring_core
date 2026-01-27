@@ -5,6 +5,20 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="myBean" class="com.example.demo.GreetingService">
+    <bean id="myBean" class="com.example.GreetingService.GreetingService">
+    </bean>
+
+    <bean id="EmailNotificationService" class="com.example.LooseCoupling.EmailNotificationService">
+    </bean>
+    <bean id="SMSNotificationService" class="com.example.LooseCoupling.SMSNotificationService">
+    </bean>
+
+    <bean id="UserServiceEmail" class="com.example.LooseCoupling.UserService">
+        <property name="notificationService" ref="EmailNotificationService" />
+    </bean>
+    <bean id="UserServiceSMS" class="com.example.LooseCoupling.UserService">
+        <!-- setter injection  -->
+<!--        <property name="notificationService" ref="SMSNotificationService" /> -->
+        <constructor-arg ref="SMSNotificationService"/> <!-- constructor injection -->
     </bean>
 </beans>
