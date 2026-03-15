@@ -6,7 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class AppMain {
     public static void main(String[] args) {
         ApplicationContext context
-                = new ClassPathXmlApplicationContext("ApplicationBeanContext.xml");
+                = new ClassPathXmlApplicationContext("applicationBeanContext.xml");
         GreetingService greetingService
                 = (GreetingService) context.getBean("myBean");
         GreetingService.sayHello();

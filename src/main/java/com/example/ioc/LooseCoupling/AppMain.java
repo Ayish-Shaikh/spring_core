@@ -1,4 +1,4 @@
-package com.example.LooseCoupling;
+package com.example.ioc.LooseCoupling;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
