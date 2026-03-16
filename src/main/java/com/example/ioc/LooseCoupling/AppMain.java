@@ -11,7 +11,7 @@ public class AppMain {
 
         UserService userServiceSMS
                 = (UserService) context.getBean("UserServiceSMS");
-        userServiceSMS.notifyUser("hello what's up");
+        userServiceSMS.notifyUser("hello what's up");//this is the notification for sms
 
         UserService userServiceEmail
                 = (UserService) context.getBean("UserServiceEmail");
