@@ -1,12 +1,17 @@
 package springAnnotations.com.example.componentScan;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component("employee1")                      //we can make custom names by using components
 public class Employee {
+    //injecting the values by using @value annotation
     private int employeeId;
+    @Value("Ayish")
     private String firstName;
+    @Value("Shaikh")
     private String lastName;
+    @Value("#{35000*12}")
     private double salary;
 
     public String getLastName() {

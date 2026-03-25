@@ -9,5 +9,6 @@ public class App {
                 = new ClassPathXmlApplicationContext("componentScanDemo.xml");
         Employee employee = context.getBean("employee1", Employee.class);
         System.out.println(employee.toString());
+        System.out.println("*********The salary is in LPA*********");
     }
 }
