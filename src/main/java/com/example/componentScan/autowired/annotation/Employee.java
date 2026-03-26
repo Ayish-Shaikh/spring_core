@@ -3,7 +3,7 @@ package com.example.componentScan.autowired.annotation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
-@Component("employee1")
+@Component("employee")
 public class Employee {
 
         //injecting the values by using @value annotation
