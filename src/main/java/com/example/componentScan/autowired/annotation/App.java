@@ -10,7 +10,7 @@ public class App {
             = new AnnotationConfigApplicationContext(AppConfig.class);
         Employee employee = context.getBean("employee", Employee.class);
         System.out.println(employee.toString());
-
+        System.out.println("*********The salary is in LPA*********");
 
         Manager manager = context.getBean("manager", Manager.class);
         System.out.println(manager.toString());

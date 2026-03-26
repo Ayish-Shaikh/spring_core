@@ -5,12 +5,16 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Manager {
+    // FIELD INJECTION
+    @Autowired
     private Employee employee;
 
-    @Autowired
-    public Manager(Employee employee) {
-        this.employee = employee;
-    }
+
+    //  CONSTRUCTOR INJECTION  ----> RECOMMENDED
+//    @Autowired
+//    public Manager(Employee employee) {
+//        this.employee = employee;
+//    }
 
     @Override
     public String toString() {
