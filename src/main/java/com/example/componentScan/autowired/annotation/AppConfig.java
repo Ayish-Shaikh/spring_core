@@ -1,10 +1,10 @@
-package com.example.componentScan.autowired.annotation.annotation;
+package com.example.componentScan.autowired.annotation;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "com.example.componentScan.annotation")
+@ComponentScan(basePackages = "com.example.componentScan.autowired.annotation")
 public class AppConfig {
 
 }

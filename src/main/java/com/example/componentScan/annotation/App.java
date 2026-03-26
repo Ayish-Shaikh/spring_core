@@ -2,7 +2,7 @@ package com.example.componentScan.annotation;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import com.example.componentScan.annotation.Employee;
+
 
 public class App {
     public static void main(String[] args) {
