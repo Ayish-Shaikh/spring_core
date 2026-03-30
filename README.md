@@ -22,7 +22,6 @@ A hands-on Java project exploring the core concepts of the Spring Framework, bui
 - [Learning Objectives](#learning-objectives)
 - [Contributing](#contributing)
 - [Author](#author)
-- [License](#license)
 - [Additional Resources](#additional-resources)
 
 ---
